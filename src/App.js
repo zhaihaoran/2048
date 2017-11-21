@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 
+import "./css/animate.css"
+
 import gameReducer from "./reducer/game"
 import Board from "./container/board.jsx"
 

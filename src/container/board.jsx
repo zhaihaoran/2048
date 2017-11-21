@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {initBoard,updateBoard,moveBottom,moveLeft,moveRight,moveTop} from '../reducer/game'
 
 import util from '../util/board'
+import ReactCSSTransitionGroup  from 'react-addons-css-transition-group'
 
 import "../css/board.css"
 
@@ -102,7 +103,15 @@ class Board extends React.Component {
         return (
             <div className="grid-container">
                 {
-                    this.props.board.map((rowAry, rowIndex) => rowAry.map((cellValue, colIndex) => <Cube key={rowIndex+"-"+colIndex } value={cellValue} rowIndex={rowIndex} colIndex={colIndex} />))
+                    this.props.board.map((rowAry, rowIndex) => rowAry.map((cellValue, colIndex) => 
+                        <ReactCSSTransitionGroup
+                            transitionName="example"
+                            transitionEnterTimeout={500}
+                            transitionLeaveTimeout={300}
+                        >
+                            <Cube key={rowIndex+"-"+colIndex+'cube' } value={cellValue} rowIndex={rowIndex} colIndex={colIndex} />
+                        </ReactCSSTransitionGroup>
+                    ))
                 }
             </div>
         )
