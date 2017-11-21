@@ -1,0 +1,78 @@
+{
+    "appearConfig": [{
+            "num": 2,
+            "chance": 0.5
+        },
+        {
+            "num": 4,
+            "chance": 0.4
+        },
+        {
+            "num": 8,
+            "chance": 0.08
+        },
+        {
+            "num": 16,
+            "chance": 0.02
+        }
+    ],
+    "newNumAmount": "3",
+    "style": {
+        "0": {
+            "background": "#ccc0b3",
+            "color": "#ccc0b3"
+        },
+        "2": {
+            "background": "#eee4da",
+            "color": "#666"
+        },
+        "4": {
+            "background": "#ede0c8",
+            "color": "#666"
+        },
+        "8": {
+            "background": "#f2b179",
+            "color": "white"
+        },
+        "16": {
+            "background": "#f59563",
+            "color": "white"
+        },
+        "32": {
+            "background": "#f67c5f",
+            "color": "white"
+        },
+        "64": {
+            "background": "#f65e3b",
+            "color": "white"
+        },
+        "128": {
+            "background": "#edcf72",
+            "color": "white"
+        },
+        "256": {
+            "background": "#edcc61",
+            "color": "white"
+        },
+        "512": {
+            "background": "#9c0",
+            "color": "white"
+        },
+        "1024": {
+            "background": "#33b5e5",
+            "color": "white"
+        },
+        "2048": {
+            "background": "#09c",
+            "color": "white"
+        },
+        "4096": {
+            "background": "#a6c",
+            "color": "white"
+        },
+        "8192": {
+            "background": "#93c",
+            "color": "white"
+        }
+    }
+}
