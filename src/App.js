@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import {createStore} from 'redux'
+import {createStore,combineReducers} from 'redux'
 import {Provider} from 'react-redux'
 
 import "./css/animate.css"
+// reducer
+import game from "./reducer/game"
+import cube from "./reducer/cube"
 
-import gameReducer from "./reducer/game"
 import Board from "./container/board.jsx"
 
-const store = createStore(gameReducer)
+const reducer = combineReducers({game, cube})
+const store = createStore(reducer)
 
 class App extends Component {
 

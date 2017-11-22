@@ -1,7 +1,6 @@
 import util from "../util/board"
 // action
 const INIT_BOARD = "INIT_BOARD"
-const UPDATE_BOARD = "INIT_BOARD"
 const MOVE_LEFT = "MOVE_LEFT"
 const MOVE_RIGHT = "MOVE_RIGHT"
 const MOVE_TOP = "MOVE_TOP"
@@ -11,19 +10,13 @@ const MOVE_BOTTOM = "MOVE_BOTTOM"
 
 // action creators
 
-// 处理board二维数组
 export const initBoard = (board) => {
     return {
         type: INIT_BOARD,
         board
     }
 }
-export const updateBoard = (board) => {
-    return {
-        type: UPDATE_BOARD,
-        board
-    }
-}
+
 export const moveLeft = (board) => {
     return {
         type: MOVE_LEFT,
@@ -59,10 +52,6 @@ export default (state, action) => {
 
     switch (action.type) {
         case INIT_BOARD:
-            return {
-                board: [...action.board]
-            }
-        case UPDATE_BOARD:
             return {
                 board: [...action.board]
             }
